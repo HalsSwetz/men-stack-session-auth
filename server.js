@@ -24,7 +24,7 @@ app.use(methodOverride("_method"));
 app.use(morgan('dev'));
 
 app.get("/", async (req, res) => {
-    res.send("hello, friend");
+    res.render("index.ejs");
 });
 
 
